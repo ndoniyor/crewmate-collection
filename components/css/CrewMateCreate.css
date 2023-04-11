@@ -1,0 +1,63 @@
+.CrewMateCreate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .creation-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 2rem 0;
+  }
+  
+  .colors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+  }
+  
+  .colors label {
+    margin-top: 0.5rem;
+  }
+  
+  .text-fields {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  .text-fields label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .text-fields input,
+  .text-fields textarea {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 1rem;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  h3 {
+    color: red;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  

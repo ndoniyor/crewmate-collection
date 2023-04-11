@@ -1,0 +1,39 @@
+.CrewMateDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    width: 30vw;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    border: 2px solid white;
+  }
+  
+  .simple-link {
+    width: 100%;
+    padding-bottom: 12px;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .simple-pic {
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+    padding: 15px;
+  }
+  
+  .description{
+    width: 100%;
+    padding: 20px;
+    background-color: darkslategray;
+    margin: 0px;
+  }

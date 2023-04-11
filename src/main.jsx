@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./App";
 import Layout from "../routes/Layout";
 import DetailView from "../routes/DetailView";
+import CreateView from "../routes/CreateView";
+import SimpleView from "../routes/SimpleView";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -12,11 +14,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index={true} element={<App />} />
-          <Route
-            index={false}
-            path="/crewmateDetails/:name"
-            element={<DetailView />}
-          />
+          <Route index={false} path="/gallery/*">
+            <Route index={true} element={<SimpleView />} />
+            <Route path=":name" element={<DetailView />} />
+          </Route>
+          <Route index={false} path="/create/" element={<CreateView />} />
         </Route>
       </Routes>
     </BrowserRouter>
